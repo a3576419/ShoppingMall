@@ -3,7 +3,7 @@
   <div id="home">
     <nav-bar class="home-nav"><div slot="center">购物街</div></nav-bar>
   <Swiper>
-    <swiper-item  v-for="item in banners">
+    <swiper-item  v-for="(item,index) in banners" :key="index">
       <a :href="item.link">
         <img :src="item.image" alt="">
       </a>
@@ -15,7 +15,7 @@
 <script>
   import NavBar from "@/components/common/navbar/NavBar";
   import {getHomeMultidata} from "@/network/home";
-  import {Swiper,SwiperItem} from "@/components/common/swiper/Swiper";
+  import {Swiper,SwiperItem} from "@/components/common/swiper";
   export default {
     name: "Home",
     components:{
