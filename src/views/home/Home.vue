@@ -5,7 +5,31 @@
     <HomeSwiper :banners="banners"></HomeSwiper>
     <HomeRecommendView :recommends="recommends"></HomeRecommendView>
     <HomeFeatureView></HomeFeatureView>
+    <TabControl class="tab-control" :titles="['流行','新款','精选']"></TabControl>
     <ul>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
+      <li>哇哇哇哇</li>
       <li>哇哇哇哇</li>
       <li>哇哇哇哇</li>
       <li>哇哇哇哇</li>
@@ -28,6 +52,8 @@
 
 <script>
   import NavBar from "@/components/common/navbar/NavBar";
+  import TabControl from "@/components/content/tabControl/TabControl";
+
   import HomeSwiper from './childComps/HomeSwiper'
   import HomeRecommendView from "@/views/home/childComps/HomeRecommendView";
   import HomeFeatureView from "@/views/home/childComps/HomeFeatureView";
@@ -38,6 +64,7 @@
     name: "Home",
     components:{
       NavBar,
+      TabControl,
       HomeSwiper,
       HomeRecommendView,
       HomeFeatureView
@@ -46,7 +73,7 @@
       return{
         // result:null
         banners:[],
-        recommends: []
+        recommends: [],
       }
     },
     created() {
@@ -73,5 +100,9 @@
     right: 0px;
     top: 0px;
     z-index: 9;
+  }
+  .tab-control{
+    position: sticky;
+    top: 44px;
   }
 </style>
