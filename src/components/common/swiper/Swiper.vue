@@ -21,7 +21,6 @@
 </template>
 <script>
 export default {
-  name:"Swiper",
   data() {
     return {
       currIndex: 1,
@@ -40,7 +39,8 @@ export default {
     },
     animDuration: {
       type: Number,
-      default:300
+      default:
+        200
     }
   },
   mounted() {},
